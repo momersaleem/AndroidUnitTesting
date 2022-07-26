@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Unit Testing"
+rootProject.name = "Android Unit Testing"
 include ':app'

@@ -6,55 +6,55 @@ import org.junit.Test
 
 internal class RegistrationUtilTest {
 
-//    @Test
-//    fun `empty username returns false`() {
-//        val result = RegistrationUtil.validateForm(
-//            "",
-//            "ab1cd3ef",
-//            "ab1cd3ef"
-//        )
-//        assertThat(result).isFalse()
-//    }
-//
-//    @Test
-//    fun `empty password returns false`() {
-//        val result = RegistrationUtil.validateForm(
-//            "username",
-//            "",
-//            "ab1cd3ef"
-//        )
-//        assertThat(result).isFalse()
-//    }
-//
-//    @Test
-//    fun `less than 2 digits password returns false`() {
-//        val result = RegistrationUtil.validateForm(
-//            "",
-//            "ab1cd3ef",
-//            "ab1cd3ef"
-//        )
-//        assertThat(result).isFalse()
-//    }
-//
-//    @Test
-//    fun `incorrectly confirmed password returns false`() {
-//        val result = RegistrationUtil.validateForm(
-//            "",
-//            "ab1cd3ef",
-//            "ab1cd3eff"
-//        )
-//        assertThat(result).isFalse()
-//    }
-//
-//    @Test
-//    fun `valid username and repeated password returns true`() {
-//        val result = RegistrationUtil.validateForm(
-//            "username",
-//            "ab1cd3ef",
-//            "ab1cd3ef"
-//        )
-//        assertThat(result).isTrue()
-//    }
+    @Test
+    fun `empty username returns false`() {
+        val result = RegistrationUtil.validateForm(
+            "",
+            "ab1cd3ef",
+            "ab1cd3ef"
+        )
+        assertThat(result).isFalse()
+    }
+
+    @Test
+    fun `empty password returns false`() {
+        val result = RegistrationUtil.validateForm(
+            "username",
+            "",
+            "ab1cd3ef"
+        )
+        assertThat(result).isFalse()
+    }
+
+    @Test
+    fun `less than 2 digits password returns false`() {
+        val result = RegistrationUtil.validateForm(
+            "",
+            "ab1cd3ef",
+            "ab1cd3ef"
+        )
+        assertThat(result).isFalse()
+    }
+
+    @Test
+    fun `incorrectly confirmed password returns false`() {
+        val result = RegistrationUtil.validateForm(
+            "",
+            "ab1cd3ef",
+            "ab1cd3eff"
+        )
+        assertThat(result).isFalse()
+    }
+
+    @Test
+    fun `valid username and repeated password returns true`() {
+        val result = RegistrationUtil.validateForm(
+            "username",
+            "ab1cd3ef",
+            "ab1cd3ef"
+        )
+        assertThat(result).isTrue()
+    }
 
     @Test
     fun emailValidator_EmptyString_ReturnsFalse() {
